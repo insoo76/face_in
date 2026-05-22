@@ -1,0 +1,26 @@
+# 🐍 파이썬 가상환경 배제 (용량이 너무 크므로 절대 올리면 안 됩니다)
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+
+# 🖼️ 대용량 원본 데이터 폴더 배제 (이미지 파일들이 수만 장 있으므로 깃허브 업로드 실패의 원인입니다)
+# 배포 앱은 사용자가 본인 사진을 직접 업로드하는 구조이므로 학습용 데이터 폴더는 원격 깃허브에 올리지 않습니다.
+data/
+data.zip
+
+# 💻 기타 운영체제 및 에디터 임시 파일
+.vscode/
+.idea/
+.ipynb_checkpoints/
+.DS_Store
+*.png
+*.jpg
+*.jpeg
+*.zip
+*.pth
+# 단, best_emotion_model.pth 또는 model.pth는 모델 추론을 위해 깃허브에 올라가야 하므로,
+# 위에서 모든 .pth와 이미지 저장을 배제하더라도 예외적으로 가중치 파일만은 업로드되도록 강제 설정합니다.
+!best_emotion_model.pth
+!model.pth
