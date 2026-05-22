@@ -1,6 +1,12 @@
+# 스트림릿 웹 프레임워크 (버전 1.30.0 이상)
 streamlit>=1.30.0
---find-links https://download.pytorch.org/whl/torch_stable.html
-torch==2.2.1+cpu
-torchvision==0.17.1+cpu
+
+# 딥러닝 핵심 라이브러리 PyTorch (버전을 고정하지 않아 리눅스/최신 파이썬 환경에서도 자동 빌드되도록 설정)
+torch
+torchvision
+
+# 이미지 처리용 Pillow 라이브러리
 pillow>=10.0.0
+
+# 수치 연산용 Numpy 라이브러리
 numpy>=1.20.0
